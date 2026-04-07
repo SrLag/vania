@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>¡Feliz Cumpleaños Vania Sophia!</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&amp;family=Be+Vietnam+Pro:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-container": "#5b4b00",
+                    "surface-container-highest": "#ffcfee",
+                    "tertiary-fixed": "#ffd709",
+                    "surface-variant": "#ffcfee",
+                    "on-secondary-fixed-variant": "#8a0b9f",
+                    "primary-dim": "#9f0051",
+                    "on-error": "#ffefef",
+                    "on-secondary": "#ffeefb",
+                    "on-secondary-fixed": "#5d006d",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-fixed-variant": "#5d002d",
+                    "inverse-primary": "#fd4c93",
+                    "outline-variant": "#d09ec0",
+                    "on-background": "#46223e",
+                    "secondary": "#9720ab",
+                    "surface-dim": "#ffc2eb",
+                    "on-primary-container": "#4c0023",
+                    "primary-fixed-dim": "#ff5195",
+                    "on-primary": "#ffeff1",
+                    "error-container": "#f74b6d",
+                    "tertiary-dim": "#5e4e00",
+                    "error-dim": "#a70138",
+                    "on-primary-fixed": "#000000",
+                    "tertiary-fixed-dim": "#efc900",
+                    "surface-bright": "#fff4f8",
+                    "secondary-fixed-dim": "#f9a7ff",
+                    "surface": "#fff4f8",
+                    "inverse-on-surface": "#bf8eaf",
+                    "primary-fixed": "#ff6fa2",
+                    "on-secondary-container": "#7c0091",
+                    "error": "#b41340",
+                    "tertiary": "#6c5a00",
+                    "on-error-container": "#510017",
+                    "surface-container": "#ffdff2",
+                    "inverse-surface": "#20031b",
+                    "background": "#fff4f8",
+                    "on-surface-variant": "#784e6c",
+                    "secondary-fixed": "#fcbcff",
+                    "on-tertiary-fixed": "#453900",
+                    "secondary-container": "#fcbcff",
+                    "primary-container": "#ff6fa2",
+                    "on-tertiary": "#fff2cd",
+                    "surface-container-low": "#ffecf5",
+                    "on-surface": "#46223e",
+                    "surface-container-high": "#ffd7f0",
+                    "primary": "#b4005d",
+                    "on-tertiary-fixed-variant": "#665500",
+                    "secondary-dim": "#89089e",
+                    "surface-tint": "#b4005d",
+                    "outline": "#966988",
+                    "tertiary-container": "#ffd709"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Be Vietnam Pro"],
+                    "label": ["Be Vietnam Pro"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .tonal-shift-only {
+            background-image: linear-gradient(to bottom, rgba(255, 244, 248, 0.9), rgba(255, 244, 248, 0.7));
+        }
+        .asymmetric-float {
+            transform: rotate(-2deg);
+        }
+        .asymmetric-float-alt {
+            transform: rotate(2deg);
+        }
+
+        /* Animated floating particles */
+        .particle {
+            position: fixed;
+            pointer-events: none;
+            opacity: 0;
+            animation: float-up 4s ease-out forwards;
+        }
+
+        @keyframes float-up {
+            0% {
+                opacity: 0;
+                transform: translateY(100vh) rotate(0deg) scale(0);
+            }
+            10% {
+                opacity: 1;
+                transform: translateY(90vh) rotate(10deg) scale(1);
+            }
+            90% {
+                opacity: 1;
+                transform: translateY(10vh) rotate(350deg) scale(1);
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(-10vh) rotate(360deg) scale(0);
+            }
+        }
+
+        /* Gradient animation */
+        @keyframes gradient-shift {
+            0%, 100% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+
+        .animated-gradient {
+            background: linear-gradient(-45deg, #ff6fa2, #b4005d, #fcbcff, #ffd709);
+            background-size: 400% 400%;
+            animation: gradient-shift 8s ease infinite;
+        }
+
+        /* Shimmer effect */
+        @keyframes shimmer {
+            0% {
+                background-position: -200% center;
+            }
+            100% {
+                background-position: 200% center;
+            }
+        }
+
+        .shimmer {
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            background-size: 200% 100%;
+            animation: shimmer 3s infinite;
+        }
+
+        /* Enhanced hover effects */
+        .hover-lift {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .hover-lift:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(180, 0, 93, 0.2);
+        }
+
+        /* Parallax effect */
+        .parallax-slow {
+            transition: transform 0.6s ease-out;
+        }
+
+        /* 3D card effect */
+        .card-3d {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            transform-style: preserve-3d;
+        }
+
+        .card-3d:hover {
+            transform: perspective(1000px) rotateY(5deg) rotateX(-5deg) scale(1.05);
+        }
+
+        /* Pulse animation */
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1.1);
+                opacity: 0.8;
+            }
+        }
+
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+
+        /* Glow effect */
+        .glow {
+            box-shadow: 0 0 20px rgba(255, 111, 162, 0.5);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .glow:hover {
+            box-shadow: 0 0 30px rgba(255, 111, 162, 0.8), 0 0 50px rgba(180, 0, 93, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#fff4f8]/70 dark:bg-pink-950/70 backdrop-blur-xl shadow-[0_12px_40px_rgba(180,0,93,0.08)]">
+<nav class="flex justify-between items-center px-6 py-4 w-full">
+<span class="text-2xl font-black text-[#b4005d] dark:text-[#ff6fa2] tracking-tighter font-headline">Vania Sophia Orozco</span>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-headline font-bold tracking-tight text-[#b4005d] border-b-2 border-[#b4005d] pb-1 hover:scale-105 transition-transform duration-300" href="#">Inicio</a>
+<a class="font-headline font-bold tracking-tight text-[#784e6c] dark:text-pink-200 hover:scale-105 transition-transform duration-300" href="#">Mensaje</a>
+<a class="font-headline font-bold tracking-tight text-[#784e6c] dark:text-pink-200 hover:scale-105 transition-transform duration-300" href="#">Fotos</a>
+<a class="font-headline font-bold tracking-tight text-[#784e6c] dark:text-pink-200 hover:scale-105 transition-transform duration-300" href="#">Celebrar</a>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-[#b4005d] cursor-pointer hover:scale-105 transition-transform" data-icon="celebration">celebration</span>
+<span class="material-symbols-outlined text-[#b4005d] cursor-pointer hover:scale-105 transition-transform" data-icon="cake">cake</span>
+</div>
+</nav>
+</header>
+<main class="pt-24 pb-32">
+<!-- Hero Section -->
+<section class="px-6 py-12 lg:py-24 relative overflow-hidden">
+<div class="absolute -top-20 -left-20 w-64 h-64 bg-primary-container/20 rounded-full blur-3xl"></div>
+<div class="absolute top-40 -right-20 w-80 h-80 bg-tertiary-container/20 rounded-full blur-3xl"></div>
+<div class="max-w-6xl mx-auto flex flex-col items-center text-center relative z-10">
+<div class="inline-flex items-center gap-2 px-6 py-2 bg-surface-container-high text-primary font-bold rounded-full mb-8 asymmetric-float shimmer">
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label uppercase tracking-widest text-xs">Un día especial ha llegado</span>
+<span class="material-symbols-outlined text-sm" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<h1 class="font-headline text-5xl md:text-7xl lg:text-8xl font-extrabold text-primary tracking-tight leading-tight mb-6 animated-gradient bg-clip-text text-transparent">
+                    ¡Feliz Cumpleaños,<br/>Vania Sophia!
+                </h1>
+<p class="font-body text-xl md:text-2xl text-on-surface-variant max-w-2xl mb-12">
+                    ¡Feliz cumpleaños a mi <span class="text-secondary font-bold">chisquitrikis!</span> Eres una persona increíble y me encanta compartir este tiempo contigo.
+                </p>
+</div>
+</section>
+<!-- Bento Photo Gallery -->
+<section class="px-6 py-12 max-w-6xl mx-auto">
+<div class="flex items-center justify-between mb-12">
+<h2 class="font-headline text-4xl font-bold">Momentos Especiales</h2>
+<div class="flex gap-2">
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-6 min-h-[600px]">
+  <div class="md:col-span-2 md:row-span-2 rounded-xl overflow-hidden shadow-xl hover:scale-[1.02] transition-all duration-500 bg-gray-200">
+    <img class="w-full h-full object-cover" alt="Imagen 1" src="1.jpeg" />
+  </div>
+
+  <div class="md:col-span-1 rounded-xl overflow-hidden shadow-xl hover:scale-[1.02] transition-all duration-500 bg-gray-200">
+    <img class="w-full h-full object-cover" alt="Pastelito" src="pastelito.png" />
+  </div>
+
+  <div class="md:col-span-1 rounded-xl overflow-hidden shadow-xl hover:scale-[1.02] transition-all duration-500 bg-gray-200">
+    <img class="w-full h-full object-cover" alt="Imagen 2" src="2.jpeg" />
+  </div>
+
+  <div class="md:col-span-2 rounded-xl overflow-hidden shadow-xl hover:scale-[1.02] transition-all duration-500 bg-gray-200">
+    <img class="w-full h-full object-cover" alt="Imagen 3" src="3.jpeg" />
+  </div>
+</div>
+</section>
+<!-- Message Section -->
+<section class="px-6 py-24 bg-surface-container-low">
+<div class="max-w-3xl mx-auto">
+<div class="bg-surface-container-lowest p-10 md:p-16 rounded-xl shadow-2xl relative asymmetric-float">
+<span class="material-symbols-outlined text-primary-container absolute -top-8 -left-8 text-7xl opacity-50" data-icon="format_quote">format_quote</span>
+<h3 class="font-headline text-3xl font-bold mb-8 text-primary">Un Mensaje para Vania</h3>
+<div class="space-y-6 font-body text-lg leading-relaxed text-on-surface-variant">
+<p>Para nuestra queridísima Vania Sophia,</p>
+<p>En estos meses que llevo conociéndote, me he dado cuenta de la gran persona que eres. Me encanta tu risa, tu energía y lo bien que la pasamos juntos.</p>
+<p>Que este 2026 esté lleno de cosas maravillosas para ti. Espero que este día te traiga muchas sonrisas y momentos felices.</p>
+<p class="font-headline font-bold text-secondary mt-8 text-2xl italic">¡Feliz cumpleaños, chisquitrikis!</p>
+</div>
+<div class="mt-12 flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-tertiary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-tertiary-container" data-icon="favorite" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+<p class="font-label text-sm font-bold uppercase tracking-widest text-primary">¡Que este sea un día tan especial como tú!</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Sparkle Card -->
+<section class="px-6 py-12 max-w-4xl mx-auto text-center">
+<div class="bg-gradient-to-br from-secondary to-primary p-12 rounded-xl text-white shadow-2xl overflow-hidden relative animated-gradient hover-lift">
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<div class="grid grid-cols-6 gap-4">
+<span class="material-symbols-outlined" data-icon="celebration">celebration</span>
+<span class="material-symbols-outlined" data-icon="cake">cake</span>
+<span class="material-symbols-outlined" data-icon="star">star</span>
+<span class="material-symbols-outlined" data-icon="auto_awesome">auto_awesome</span>
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+<span class="material-symbols-outlined" data-icon="pets">pets</span>
+</div>
+</div>
+<h3 class="text-3xl font-headline font-bold mb-4 relative z-10">¡Envía un poco de magia de cumpleaños!</h3>
+<p class="mb-8 opacity-90 relative z-10">Haz clic abajo para llenar a Vania de regalos virtuales.</p>
+<div class="flex justify-center gap-6 relative z-10">
+<button id="icecream-btn" class="bg-white/20 backdrop-blur-md p-4 rounded-full hover:scale-110 transition-transform active:scale-90 hover-lift">
+<span class="material-symbols-outlined text-4xl" data-icon="ice_cream">icecream</span>
+</button>
+<button id="cake-btn" class="bg-white/20 backdrop-blur-md p-4 rounded-full hover:scale-110 transition-transform active:scale-90 hover-lift">
+<span class="material-symbols-outlined text-4xl" data-icon="cake">cake</span>
+</button>
+<button id="bakery-btn" class="bg-white/20 backdrop-blur-md p-4 rounded-full hover:scale-110 transition-transform active:scale-90 hover-lift">
+<span class="material-symbols-outlined text-4xl" data-icon="bakery_dining">bakery_dining</span>
+</button>
+</div>
+</div>
+</section>
+<script>
+    // Create floating particles
+    function createParticle() {
+        const particle = document.createElement('div');
+        particle.className = 'particle';
+
+        const icons = ['🎉', '🎂', '✨', '💖', '🌟', '🎈', '🎁', '🌺'];
+        const colors = ['#b4005d', '#ff6fa2', '#fcbcff', '#ffd709', '#9720ab'];
+
+        particle.textContent = icons[Math.floor(Math.random() * icons.length)];
+        particle.style.left = Math.random() * 100 + '%';
+        particle.style.color = colors[Math.floor(Math.random() * colors.length)];
+        particle.style.fontSize = (Math.random() * 20 + 15) + 'px';
+        particle.style.animationDuration = (Math.random() * 3 + 4) + 's';
+        particle.style.animationDelay = Math.random() * 2 + 's';
+
+        document.body.appendChild(particle);
+
+        setTimeout(() => {
+            particle.remove();
+        }, 7000);
+    }
+
+    // Create specific particles for ice cream (hearts)
+    function createHearts() {
+        for(let i = 0; i < 12; i++) {
+            setTimeout(() => {
+                const heart = document.createElement('div');
+                heart.className = 'particle';
+                heart.textContent = '💖';
+                heart.style.left = Math.random() * 100 + '%';
+                heart.style.color = ['#ff69b4', '#ff1493', '#ff6fa2'][Math.floor(Math.random() * 3)];
+                heart.style.fontSize = (Math.random() * 15 + 20) + 'px';
+                heart.style.animationDuration = (Math.random() * 2 + 3) + 's';
+                document.body.appendChild(heart);
+                setTimeout(() => heart.remove(), 5000);
+            }, i * 50);
+        }
+    }
+
+    // Create specific particles for cake (birthday confetti)
+    function createBirthdayConfetti() {
+        for(let i = 0; i < 15; i++) {
+            setTimeout(() => {
+                const confetti = document.createElement('div');
+                confetti.className = 'particle';
+                confetti.textContent = ['🎂', '🎉', '🎈', '🎁', '🌟'][Math.floor(Math.random() * 5)];
+                confetti.style.left = Math.random() * 100 + '%';
+                confetti.style.color = ['#ffd700', '#ff69b4', '#00ff00', '#ff4500', '#9370db'][Math.floor(Math.random() * 5)];
+                confetti.style.fontSize = (Math.random() * 12 + 18) + 'px';
+                confetti.style.animationDuration = (Math.random() * 2 + 4) + 's';
+                document.body.appendChild(confetti);
+                setTimeout(() => confetti.remove(), 6000);
+            }, i * 30);
+        }
+    }
+
+    // Create specific particles for bakery (sparkles and stars)
+    function createSparkles() {
+        for(let i = 0; i < 20; i++) {
+            setTimeout(() => {
+                const sparkle = document.createElement('div');
+                sparkle.className = 'particle';
+                sparkle.textContent = ['✨', '⭐', '🌟', '💫'][Math.floor(Math.random() * 4)];
+                sparkle.style.left = Math.random() * 100 + '%';
+                sparkle.style.color = ['#ffd700', '#ffeb3b', '#fff176', '#ffee58'][Math.floor(Math.random() * 4)];
+                sparkle.style.fontSize = (Math.random() * 10 + 15) + 'px';
+                sparkle.style.animationDuration = (Math.random() * 1 + 2) + 's';
+                document.body.appendChild(sparkle);
+                setTimeout(() => sparkle.remove(), 4000);
+            }, i * 25);
+        }
+    }
+
+    // Create particles periodically
+    setInterval(createParticle, 800);
+
+    // Specific button actions
+    document.addEventListener('DOMContentLoaded', () => {
+        // Ice cream button - sends sweet hearts
+        document.getElementById('icecream-btn').addEventListener('click', function() {
+            createHearts();
+            this.style.transform = 'scale(0.9)';
+            setTimeout(() => {
+                this.style.transform = '';
+            }, 200);
+        });
+
+        // Cake button - birthday celebration
+        document.getElementById('cake-btn').addEventListener('click', function() {
+            createBirthdayConfetti();
+            this.style.transform = 'rotate(360deg) scale(0.9)';
+            setTimeout(() => {
+                this.style.transform = '';
+            }, 400);
+        });
+
+        // Bakery button - magical sparkles
+        document.getElementById('bakery-btn').addEventListener('click', function() {
+            createSparkles();
+            this.style.transform = 'scale(1.2) rotate(10deg)';
+            setTimeout(() => {
+                this.style.transform = '';
+            }, 300);
+        });
+
+        // Parallax scrolling effect
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const parallaxElements = document.querySelectorAll('.parallax-slow');
+
+            parallaxElements.forEach(element => {
+                const speed = element.dataset.speed || 0.5;
+                element.style.transform = `translateY(${scrolled * speed}px)`;
+            });
+        });
+
+        // Add parallax class to hero section elements
+        const heroElements = document.querySelectorAll('.absolute');
+        heroElements.forEach(el => {
+            el.classList.add('parallax-slow');
+            el.dataset.speed = Math.random() * 0.3 + 0.1;
+        });
+
+        // Add hover effects to photo gallery
+        document.querySelectorAll('.grid img').forEach(img => {
+            img.parentElement.classList.add('card-3d');
+        });
+
+        // Add glow effect to interactive elements
+        document.querySelectorAll('button, .material-symbols-outlined').forEach(el => {
+            el.classList.add('glow');
+        });
+    });
+</script>
+</html>
